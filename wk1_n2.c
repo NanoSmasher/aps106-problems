@@ -6,5 +6,5 @@ int main () {
   printf ("Enter two integers: ");
   scanf("%d %d", &first, &second);
   printf("The user entered %d and %d", first, second);
-return 0;
+  return 0;
 }

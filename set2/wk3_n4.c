@@ -36,7 +36,7 @@ int main () {
       else fromstart = starthr*60 + startmin + 6*60;
   
       //minutes until 5:59am
-      if (endhr >=1 && endhr<=5) endhr+=12;
+      if (endhr < 6) endhr+=12;
       fromend = (12*60+5*60+59) - endhr*60 - endmin;
       
       //calculate time difference

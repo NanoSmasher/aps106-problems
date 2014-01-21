@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 int main () {
     /*Another one that’s not too hard.  From the text, write a program that determines the number of

@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//WARNING: The prof's solution is clearer and much more logical to follow. 
+
 int main () {
     /* This one’s a bit more complicated.  Write a program to calculate a babysitting charge.  Imagine
     that a babysitter is willing to work anytime between 6:00 pm and 5:59 am.  Ask the babysitter to

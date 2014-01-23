@@ -5,6 +5,7 @@ int main(){
     At that point, calculate the average increment in the set of increasing values.
     For example enter a number:
 
+    enter a number: -14
     enter a number: 3
     enter a number: 11
     enter a number: 11
@@ -37,11 +38,12 @@ int main(){
     while(!done){
         printf("enter a number: ");
         scanf("%d",&input);
-        if (input >= pre && pattern == 1){
+        if (input == pre){ //empty block
+        } else if(input > pre && pattern == 1){
             sum+=input-pre;
             inc++;
             pre = input;
-        } else if (input <= pre && pattern == -1) {
+        } else if (input < pre && pattern == -1) {
             printf("here: ");
             sum+=pre-input;
             inc++;
@@ -51,6 +53,6 @@ int main(){
 
     printf("average ");
     pattern == 1 ? printf("increment") : printf("decrement");
-    printf(" is %d/%d = %f", sum, inc, (sum)/(double)(inc));
+    printf(" is %d/%d = %.2f", sum, inc, (sum)/(double)(inc));
     return 0;
 }

@@ -1,0 +1,36 @@
+APS106 - LAB #3
+MONDAY, JANUARY 27, 2:00 - 4:00
+This lab will test your ability to use various selection constructs (if, else if, switch) in a program
+that makes decisions based on the value of input. The extension of the source file must be .c, not
+.cpp (e.g. lab3.c).
+The Body Mass Index (BMI) is a measure of body fat, calculated according to the
+following equation based on Imperial units ( lbs – pounds, in – inches ):
+
+BMI =       weight (lbs)
+      ~~~~~~~~~~~~~~~~~~~~~~ * 703
+      height * height ( in )
+      
+      
+For example, a person who weighs 220 lbs and is 6 feet 3 inches tall (there are 12 inches
+in a foot) has a BMI of:
+
+BMI  = 220/(75*75) * 703 = 27.5
+
+Write a program that asks a user his/her weight (lbs) and height (ft and in), calculates a
+value of the BMI, and then categorizes the weight according to the following:
+    < 18.5 underweight
+    18.5 – 25.0 normal weight
+    25.0 – 30.0 overweight
+    > 30.0 obese
+    
+For example, input and output might look like this:
+Weight (lbs) : 220
+  Height (ft/in) : 6 3
+  
+  Your BMI score is 27.5 - you’re overweight!
+
+or like this:
+
+Weight (lbs) : -45
+  Height (ft/in) : 6 3
+  I’m sorry; this input is invalid.

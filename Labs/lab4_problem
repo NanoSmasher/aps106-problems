@@ -1,0 +1,28 @@
+APS106 -LAB #4
+MONDAY,FEBRUARY 3, 2:00 - 4:00
+This lab will test your ability to use various selection constructs (if, else if, switch) and a loop 
+(while, do while, for). The extension of the source file must be .c, not .cpp (e.g. lab4.c).
+
+Fluid mechanics is the discipline concerned with the behaviour of liquids and gases at 
+rest or in motion. This field encompasses a variety of applications: from flow in microchannels to the motion of airplanes. 
+
+An important area of fluid mechanics is flow through pipes. In a circular pipe, the fluid, 
+e.g. water, is at rest adjacent to the wall of the pipe and reaches a maximum velocity at 
+the centre of the pipe. Fully developed laminar flow has a parabolic velocity profile of 
+the form:
+
+
+       del p           ╔      /   r  \ 2  ╗
+v = ~~~~~~~~~~ * R^2 * ║  1 - | ~~~~~ |   ║
+    4 * mu * L         ╚      \   R  /    ╝
+
+
+Parabolic velocity profile
+where {v} is the axial velocity at position {r}, {del p} is the pressure loss over pipe length {L}, {mu} is 
+the dynamic viscosity and {R} the radius of the pipe.
+
+Water ( mu = 1.002 x 10-3 Ns/m2) is flowing through a 0.10 m diameter pipe. There is a 10 Pa loss per 100 m of pipe. Determine the velocity distribution in the radial direction by 
+writing a program that: 
+> reads the diameter, dynamic viscosity, pressure loss and length of pipe from the 
+keyboard, and exits the program if any of these values are not positive;
+> outputs to the screen the velocity

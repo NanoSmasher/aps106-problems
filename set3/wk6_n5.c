@@ -24,8 +24,8 @@ int main(){
 
     printf("Enter a word: ");
     while ((input = getchar() )!= '\n') {
-            if (input>96 && input<123) {input -= 'a'-'A';}
-            if (input>64 && input<91){
+            if (input>='a' && input<='z') {input -= 'a'-'A';}
+            if (input>='A' && input<'Z'){
                 if (input>=last) {last = input; answer='y';}
                 else {answer = 'n'; break;}
             } else {answer = '?'; break;}

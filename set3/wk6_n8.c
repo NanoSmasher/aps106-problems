@@ -12,12 +12,17 @@ int main(){
 
     FILE *fp = fopen(FILENAME, "r");
     FILE *cf = fopen(COPY, "w");
-    char read;
+    int first=1, read=0;
 
     if (fp == NULL || cf == NULL) {
             printf("ERROR: Could not open file.");
-            exit(EXIT_FAILURE);
-    } else while((read = getc(fp)) != EOF) putc(read, cf);
+            return -1;
+    }
+
+    while((fscanf(fp,"%d",&read)) != EOF){
+        if (first) {fprintf(cf, "%d", read); first=!first;}
+        else fprintf(cf, "\n%d", read);
+    }
 
     fclose(fp);
     fclose(cf);

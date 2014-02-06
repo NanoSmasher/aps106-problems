@@ -28,7 +28,7 @@ int main(){
     printf("Total number of grades: %d\n",count);
     printf("Grades above 50: %d\n",above);
     printf("Grades below 50: %d\n",below);
-    printf("Average grade (mean): %.2f%%\n", 1.*sum/count);
+    printf("Average grade (mean): %.2f%%\n", (float)sum/count);
 
     fclose(fp);
     return 0;

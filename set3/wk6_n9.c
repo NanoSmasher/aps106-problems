@@ -24,17 +24,16 @@ int main(){
     char read;
 
     if (fp == NULL) {
-            printf("ERROR: Could not open file.");
-            exit(EXIT_FAILURE);
-    } else {
-        do {
-            read = getc(fp);
-            if (read == '\n') putchar(' ');
-            else putchar(read);
-        } while(read != EOF);
+        printf("ERROR: Could not open file.");
+        return -1;
     }
 
-    fclose(fp);
+    while ((read = getc(fp)) != EOF){
+        if (read == '\n') putchar(' ');
+        else putchar(read);
+    };
 
+
+    fclose(fp);
     return 0;
 }

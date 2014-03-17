@@ -9,7 +9,9 @@ void insertionSort(char[], int);
 
 void main(){
     char array [SIZE];
+    printf("Type away!: ");
     getText(array, SIZE);
+
     printArray(array,SIZE);
     insertionSort(array, SIZE);
     printArray(array,SIZE);
@@ -43,14 +45,12 @@ void insertionSort(char a[], int n){
                 break;                              //and break as we now have a space to insert the character
             }
         }
-        a[i] = tmp;                                 /*Insert the character.
+        a[i] = temp;                                 /*Insert the character.
                                                       If the i loop never reached the "if" statement,
                                                         then just put it back where it was originally
                                                       Otherwise,
                                                         Put the character in the space created
                                                     */
     }
-
-
     return;
 }
